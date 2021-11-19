@@ -17,7 +17,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'project name',
+      title: 'Currency Exchange API',
       template: './src/index.html',
       inject: 'head'
     })
