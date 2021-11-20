@@ -1,6 +1,6 @@
-# {Project title}
+# {Currency Exchange}
 
-#### {breif description}
+#### An app practicing API calls and ES6 features
 ---
 #### By:
 * _**Liam Eller**_
@@ -18,7 +18,7 @@
 
 ## Description
 
-_{More detailed description}_
+_Epicodus independent project: Currency exchange website using the [ExchangeRate-API](https://www.exchangerate-api.com/)_
 
 ## Setup & Installation Instructions
 
@@ -30,12 +30,16 @@ _{More detailed description}_
 6. Build the display environment in the terminal by typing "npm run build"
 7. Run the environment in your default web browser by typing "npm run start" in the terminal
 
+_Creating your own API Keys by following these steps:_
+
+_Visit the [ExchangeRate-API](https://www.exchangerate-api.com/) site. Input your email address and click the "Get Free Key" button. You'll be prompted to create an account with your email, first name and password. Agree to the terms of use and click "Get Started!" At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month._
+
 ## Known Bugs
 
-_None_
+_Error message comes back as an empty string_
 
 ## License
 
 _https://opensource.org/licenses/MIT_
 
-_MIT Copyright (c) _xx/2021_ _Liam Eller_
+_MIT Copyright (c) _11/19/2021_ _Liam Eller_

@@ -1,18 +1,13 @@
 export default class APIService {
   static async APIRequest(currency, amount){
     try {
-      console.log(amount);
-      console.log(currency);
-      const response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currency}/${amount}`);
-      if (!response.ok) {
-        console.log(response.ok);
-        throw Error(response.statusText);
+      const APICall = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currency}/${amount}`);
+      if (!APICall.ok) {
+        throw Error(APICall.statusText);
       }
-      console.log(response.ok);
-      console.log(response);
-      return await response.json();
+      return await APICall.json();
     } catch(error) {
-      console.log(error);
+      console.log(error.message + " it has a value");
       return error.message;
     }
   }

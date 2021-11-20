@@ -1,0 +1,23 @@
+<html lang="en-US">
+<head>
+  <title>Currency Exchange</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Get the current exchange rate from USD to your desired currency</h1>
+    <label for="USDAmount">Enter a USD amount:</label>
+    <input id="USDAmount" type="text">
+    <h6>TO</h6>
+    <select id="select-currency">
+      <option value="test">EUR</option>
+      <option value="AED">AED</option>
+      <option value="AFL">AFL</option>
+      <option value="ANG">ANG</option>
+    </select>
+    <button class="btn-success" id="get-rate">Exchange</button>
+    <div id="showErrors"></div>
+    <div id="rateDisplay"></div>
+    <div id="resultDisplay"></div>
+  </div>
+</body>
+</html>
