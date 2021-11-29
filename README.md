@@ -3,7 +3,7 @@
 #### An app practicing API calls and ES6 features
 ---
 #### By:
-* _**Liam Eller**_
+_**Liam Eller**_
 
 ## Technologies Used
 
@@ -36,7 +36,7 @@ _Visit the [ExchangeRate-API](https://www.exchangerate-api.com/) site. Input you
 
 ## Known Bugs
 
-_Error message comes back as an empty string_
+_None_
 
 ## License
 
