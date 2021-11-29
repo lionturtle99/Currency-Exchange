@@ -8,19 +8,18 @@ function getElements(response) {
   console.log("It made to getElements");
   if (response.result) {
     console.log("it made it to the if branch");
-    $('#rateDisplay').text(`The exchange rate is: ${response.conversion_rate}`);
+    $('#rate-alert').text(`The exchange rate is: ${response.conversion_rate}`);
     $('#resultDisplay').text(`${response.conversion_result}`);
   } else {
     console.log("made to else branch");
     if (response === ""){console.log("The if statement says it's an empty string");}
-    $('#showErrors').text(`There was an error: ${response}`);
+    $('#rate-alert').text(`There was an error: ${response}`);
   }
 }
 
 async function clearFields(){
   $('#resultDisplay').text("");
-  $('#rateDisplay').text("");
-  $('#showErrors').text("");
+  $('#rate-alert').text("");
 }
 
 async function makeAPICall(base, currency, amount){

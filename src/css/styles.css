@@ -59,15 +59,34 @@ select {
   border: solid rgb(245, 245, 245) 1px;
 }
 .header{
-  border: solid black 1px;
-  box-shadow:4px 4px;
+  border: solid rgb(179, 179, 179) 1px;
+  border-radius: 5px;
+  box-shadow: 0.5rem 0.5rem rgb(150, 150, 150);
   width: 60em;
   height: 10em;
-  padding: 10px;
+  padding: 35px;
   margin: 20px;
   font-style: italic;
 }
+.header > p {
+  margin-top: 10px;
+}
 .money-grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 19% 31% 25% 25%;
+}
+footer{
+  margin-top:40px;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align:center;
+}
+.code > ul{
+  margin-left: 10px;
+}
+#rate-alert{
+  font-weight: bold;
+}
+ul{
+  list-style-type: none;
 }
