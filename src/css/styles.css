@@ -1,0 +1,73 @@
+.container-css {
+  background-image: url(../assets/images/currency-exchange.jpeg);
+  background-color: rgb(245, 245, 245);
+  max-width: 70em;
+  text-align: center;
+  min-height: 20em;
+  margin: auto;
+}
+h1{
+  font-style: italic;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  margin-top: 3em;
+}
+.select-box{
+  justify-self: end;
+  align-self: end;
+}
+.display-box{
+  justify-self: start;
+  align-self: start;
+}
+#base-currency{
+  margin-bottom: 7px;
+}
+::placeholder{
+  color:black;
+}
+#select-currency{
+  display: block;
+}
+#resultDisplay {
+  border: solid black 1px;
+  min-height: 30px;
+  max-height: 30px;
+  background-color: white;
+  display: block;
+  width:inherit;
+  margin-top: 7px;
+  text-align:left;
+  padding-left: 3px;
+}
+select {
+  width:180px;
+  height:30px;
+}
+.btn-success {
+  width: 367;
+  margin: 30px;
+}
+.additional{
+  width:70em;
+  margin:auto;
+  background-color: rgb(245, 245, 245);
+  height:auto;
+  border: solid rgb(245, 245, 245) 1px;
+}
+.header{
+  border: solid black 1px;
+  box-shadow:4px 4px;
+  width: 60em;
+  height: 10em;
+  padding: 10px;
+  margin: 20px;
+  font-style: italic;
+}
+.money-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}

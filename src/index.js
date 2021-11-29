@@ -5,25 +5,36 @@ import './css/styles.css';
 import APIService from './exchange-service.js';
 
 function getElements(response) {
-  console.log("made to getElements");
+  console.log("It made to getElements");
   if (response.result) {
     console.log("it made it to the if branch");
     $('#rateDisplay').text(`The exchange rate is: ${response.conversion_rate}`);
-    $('#resultDisplay').text(`The exchange amount is: ${response.conversion_result} ${response.target_code}`);
+    $('#resultDisplay').text(`${response.conversion_result}`);
   } else {
-    if (response === ""){console.log("it is a empty string");}
     console.log("made to else branch");
+    if (response === ""){console.log("The if statement says it's an empty string");}
     $('#showErrors').text(`There was an error: ${response}`);
   }
 }
 
+async function clearFields(){
+  $('#resultDisplay').text("");
+  $('#rateDisplay').text("");
+  $('#showErrors').text("");
+}
+
+async function makeAPICall(base, currency, amount){
+  const response = await APIService.APIRequest(base, currency, amount);
+  console.log(response);
+  getElements(response);
+}
+
 $(document).ready(function() {
   $('#get-rate').click(function() {
+    let base = $('#base-currency :checked').val();
     let currency = $('#select-currency :checked').val();
     let amount = $('#USDAmount').val();
-    $('#USDAmount').val("");
-    APIService.APIRequest(currency, amount).then(function(response) {
-      getElements(response);
-    });
+    clearFields();
+    makeAPICall(base, currency, amount);
   });
 });
