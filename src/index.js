@@ -19,7 +19,6 @@ function getElements(response) {
 
 async function makeAPICall(base, currency, amount){
   const response = await APIService.APIRequest(base, currency, amount);
-  console.log(response);
   getElements(response);
 }
 
