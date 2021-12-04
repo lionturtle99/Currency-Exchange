@@ -3,104 +3,106 @@
   <title>Currency Exchange</title>
 </head>
 <body>
-  <div class="container-css">
-    <h1>Currency Exchange</h1>
-    <p>We do the math so you don't have to</p>
-    <div class="grid">
-      <div class="select-box">
-        <select id="base-currency">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="AED">AED</option>
-          <option value="ANG">ANG</option>
-          <option value="AFN">AFN</option>
-          <option value="ALL">ALL</option>
-          <option value="AOA">AOA</option>
-          <option value="ARS">ARS</option>
-          <option value="AUD">AUD</option>
-          <option value="AZN">AZN</option>
-          <option value="BAM">BAM</option>
-          <option value="BTN">BTN</option>
-        </select>
-        <select id="select-currency">
-          <option value="EUR">EUR</option>
-          <option value="USD">USD</option>
-          <option value="AED">AED</option>
-          <option value="ANG">ANG</option>
-          <option value="AFN">AFN</option>
-          <option value="ALL">ALL</option>
-          <option value="AOA">AOA</option>
-          <option value="ARS">ARS</option>
-          <option value="AUD">AUD</option>
-          <option value="AZN">AZN</option>
-          <option value="BAM">BAM</option>
-          <option value="BTN">BTN</option>
-        </select>
+  <div class="page">
+    <div class="container-css">
+      <h1>Currency Exchange</h1>
+      <p>We do the math so you don't have to</p>
+      <div class="grid">
+        <div class="select-box">
+          <select id="base-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="AED">AED</option>
+            <option value="ANG">ANG</option>
+            <option value="AFN">AFN</option>
+            <option value="ALL">ALL</option>
+            <option value="AOA">AOA</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="AZN">AZN</option>
+            <option value="BAM">BAM</option>
+            <option value="BTN">BTN</option>
+          </select>
+          <select id="select-currency">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="ANG">ANG</option>
+            <option value="AFN">AFN</option>
+            <option value="ALL">ALL</option>
+            <option value="AOA">AOA</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="AZN">AZN</option>
+            <option value="BAM">BAM</option>
+            <option value="BTN">BTN</option>
+          </select>
+        </div>
+        <div class="display-box">
+          <input id="USDAmount" placeholder="Base amount" type="number">
+          <div id="resultDisplay">Exchanged amount</div>
+        </div>
       </div>
-      <div class="display-box">
-        <input id="USDAmount" placeholder="Base amount" type="text">
-        <div id="resultDisplay">Exchanged amount</div>
-      </div>
+      <button class="btn-success" id="get-rate">Exchange</button>
+      <div id="rate-alert"></div>
     </div>
-    <button class="btn-success" id="get-rate">Exchange</button>
-    <div id="rate-alert"></div>
-  </div>
-  <div class="additional">
-    <div class="header">
-      <h2>Supported Currencies</h2>
-      <p>List of all currency codes, name of currency and country of origin supported here</p>
+    <div class="additional">
+      <div class="header">
+        <h2>Supported Currencies</h2>
+        <p>List of all currency codes, name of currency and country of origin supported here</p>
+      </div>
+      <div class="money-grid">
+        <div class="code">
+          <ul>
+            <li>USD</li>
+            <li>EUR</li>
+            <li>AED</li>
+            <li>ANG</li>
+            <li>AFN</li>
+            <li>ALL</li>
+            <li>AOA</li>
+            <li>ARS</li>
+            <li>AUD</li>
+            <li>AZN</li>
+            <li>BAM</li>
+            <li>BTN</li>
+          </ul>
+        </div>
+        <div class="name">
+          <ul>
+            <li>United States Dollar</li>
+            <li>Euro</li>
+            <li>AED Dirham</li>
+            <li>Netherlands Antillian Guilder</li>
+            <li>Afghan Afghani</li>
+            <li>Albanian Lek</li>
+            <LI>Angolan Kwanza</LI>
+            <li>Argentine Peso</li>
+            <li>Australian Dollar</li>
+            <li>Azerbaijani Manat</li>
+            <li>Bosnia and Herzegovina Mark</li>
+            <li>Bhutanese Ngultrum</li>
+          </ul>
+        </div>
+        <div class="origin">
+          <ul>
+            <li>United States of America</li>
+            <li>European Union</li>
+            <li>United Arab Emirates</li>
+            <li>Netherlands Antilles</li>
+            <li>Afghanistan</li>
+            <li>Albania</li>
+            <LI>Angola</LI>
+            <li>Argentina</li>
+            <li>Australia</li>
+            <li>Azerbaijan</li>
+            <li>Bosnia and Herzegovina</li>
+            <li>Bhutan</li>
+          </ul>
+        </div>
+      </div>
+      <footer>Thanks for visiting</footer>
     </div>
-    <div class="money-grid">
-      <div class="code">
-        <ul>
-          <li>USD</li>
-          <li>EUR</li>
-          <li>AED</li>
-          <li>ANG</li>
-          <li>AFN</li>
-          <li>ALL</li>
-          <li>AOA</li>
-          <li>ARS</li>
-          <li>AUD</li>
-          <li>AZN</li>
-          <li>BAM</li>
-          <li>BTN</li>
-        </ul>
-      </div>
-      <div class="name">
-        <ul>
-          <li>United States Dollar</li>
-          <li>Euro</li>
-          <li>AED Dirham</li>
-          <li>Netherlands Antillian Guilder</li>
-          <li>Afghan Afghani</li>
-          <li>Albanian Lek</li>
-          <LI>Angolan Kwanza</LI>
-          <li>Argentine Peso</li>
-          <li>Australian Dollar</li>
-          <li>Azerbaijani Manat</li>
-          <li>Bosnia and Herzegovina Mark</li>
-          <li>Bhutanese Ngultrum</li>
-        </ul>
-      </div>
-      <div class="origin">
-        <ul>
-          <li>United States of America</li>
-          <li>European Union</li>
-          <li>United Arab Emirates</li>
-          <li>Netherlands Antilles</li>
-          <li>Afghanistan</li>
-          <li>Albania</li>
-          <LI>Angola</LI>
-          <li>Argentina</li>
-          <li>Australia</li>
-          <li>Azerbaijan</li>
-          <li>Bosnia and Herzegovina</li>
-          <li>Bhutan</li>
-        </ul>
-      </div>
-    </div>
-    <footer>Thanks for visiting</footer>
   </div>
 </body>
 </html>

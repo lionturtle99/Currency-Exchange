@@ -1,10 +1,13 @@
+.page{
+  background-color:rgb(245, 245, 245);
+  box-shadow: 0px 0px 20px 20px rgb(189, 186, 186);
+  max-width: 70em;
+  margin:auto;
+}
 .container-css {
   background-image: url(../assets/images/currency-exchange.jpeg);
-  background-color: rgb(245, 245, 245);
-  max-width: 70em;
   text-align: center;
   min-height: 20em;
-  margin: auto;
 }
 h1{
   font-style: italic;
@@ -52,8 +55,6 @@ select {
   margin: 30px;
 }
 .additional{
-  width:70em;
-  margin:auto;
   background-color: rgb(245, 245, 245);
   height:auto;
   border: solid rgb(245, 245, 245) 1px;
